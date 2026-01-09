@@ -8,7 +8,7 @@ import productsData from '@/lib/products.json'
 import { Button } from '@/components/ui/button'
 import { X } from 'lucide-react'
 
-interface Product {
+export interface Product {
   id: number
   title: string
   description: string
