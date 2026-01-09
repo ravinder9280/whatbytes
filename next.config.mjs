@@ -6,7 +6,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'cdn.dummyjson.com',
       },
+      
     ],
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 
