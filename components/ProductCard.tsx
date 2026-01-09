@@ -46,14 +46,14 @@ export default function ProductCard({
 
     for (let i = 0; i < fullStars; i++) {
       stars.push(
-        <Star key={i} className="w-4 h-4 fill-primary text-primary" />
+        <Star key={i} className="w-4 h-4 fill-yellow-500  text-yellow-500 " />
       )
     }
     if (hasHalfStar) {
       stars.push(
         <Star
           key="half"
-          className="w-4 h-4 fill-primary/50 text-primary"
+          className="w-4 h-4 fill-yellow-5 text-yellow-500/50 text-yellow-500 "
         />
       )
     }

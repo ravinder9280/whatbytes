@@ -1,12 +1,13 @@
 'use client'
 
-import { useState, useMemo, useEffect } from 'react'
+import { useState, useMemo, useEffect, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import ProductCard from '@/components/ProductCard'
 import Sidebar from '@/components/Sidebar'
 import productsData from '@/lib/products.json'
 import { Button } from '@/components/ui/button'
 import { X } from 'lucide-react'
+import { ListSkeleton } from '@/components/ListSkeleton'
 
 interface Product {
   id: number
@@ -147,6 +148,8 @@ export default function Home() {
   priceRange[1] !== maxPrice
 
   return (
+    <Suspense fallback={<ListSkeleton/>}>
+
     <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col lg:flex-row gap-8">
         <aside className="w-full lg:w-80 flex-shrink-0">
@@ -203,5 +206,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </Suspense>
   )
 }
