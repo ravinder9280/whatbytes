@@ -30,7 +30,7 @@ export default function CartPage() {
     return (
       <div className="container mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-8">
-          <h1 className="text-2xl font-bold">YOUR CART</h1>
+          <h1 className="text-2xl font-bold text-black">YOUR CART</h1>
           <Link href="/">
             <Button variant="ghost" size="icon" className="h-8 w-8">
               <X className="h-5 w-5" />
@@ -53,11 +53,11 @@ export default function CartPage() {
     <div className="container mx-auto px-4 py-12 min-h-[80vh]">
       <div className="flex items-center justify-between mb-8">
         <div className="flex items-center gap-4">
-          <h1 className="text-2xl font-bold">YOUR CART</h1>
+          <h1 className="text-2xl font-bold text-black">YOUR CART</h1>
           <div className="h-[1px] bg-border flex-1 max-w-md"></div>
         </div>
         <Link href="/">
-          <Button variant="ghost" size="icon" className="h-8 w-8">
+          <Button variant="ghost" size="icon" className="h-8 w-8 text-black">
             <X className="h-5 w-5" />
           </Button>
         </Link>
