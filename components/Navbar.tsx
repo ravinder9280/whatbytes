@@ -37,7 +37,7 @@ const Navbar = () => {
             <div className='w-full container mx-auto sm:px-6 md:px-12 lg:px-24 xl:px-0 px-4'>
                 <div className='flex items-center h-16 justify-between gap-2'>
 
-                    <Link href={'/'} className='text-foreground font-poppins font-bold md:text-xl flex items-center cursor-pointer'>
+                    <Link href={'/'} className='text-foreground hidden  font-poppins font-bold md:text-xl md:flex items-center cursor-pointer'>
                         WhatBytes
 
                     </Link>

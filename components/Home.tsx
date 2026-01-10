@@ -165,16 +165,16 @@ export default function Home() {
         </aside>
 
         <div className="flex-1">
-          <div className='flex items-center justify-between'>
+          <div className='flex items-center justify-between mb-6'>
 
-          <h1 className="text-2xl font-bold text-primary-dark mb-6">
+          <h1 className="text-2xl font-bold text-primary-dark ">
             Product Listing
           </h1>
          {
           isFilterApplied&&
 
          <Button onClick={handleClearFilters} variant={'outline'} className='text-black'>
-            Clear filter <X/>
+            Clear filters <X/>
           </Button>
          } 
           </div>
